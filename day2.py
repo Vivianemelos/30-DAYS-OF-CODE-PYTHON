@@ -14,14 +14,12 @@ import sys
 #  2. INTEGER tip_percent
 #  3. INTEGER tax_percent
 #
-def Arredonda(n):
-    return int(n + (0 if n % 1 ==  0 else 1)) 
-
 def solve(meal_cost, tip_percent, tax_percent):
-    tip_percent = tip_percent * meal_cost / 100
-    tax_percent = tax_percent * tip_percent / 100
-    x = meal_cost + tip_percent + tax_percent
-    print(Arredonda(x))
+    tip = meal_cost * tip_percent / 100
+    tax = meal_cost * tax_percent / 100
+    total_cost = meal_cost + tip + tax
+    
+    print(round(total_cost))
     
 if __name__ == '__main__':
     meal_cost = float(input().strip())
