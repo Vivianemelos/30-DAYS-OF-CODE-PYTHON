@@ -1,1 +1,1 @@
-Este repositorio contem todos os exercicios resolvidos do 30 dias de codigo da plataforma Hackerrank.
+30 dias de código em Python.
